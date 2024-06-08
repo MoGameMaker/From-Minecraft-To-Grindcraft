@@ -744,6 +744,7 @@ addArea("Overworld",                                            // Function for 
             cost: [["sticks", 2], ["oak planks", 3]],
             amount: 1,
             unlockGrinds: ["caves"],
+            message: ["Caves Unlocked!"],
         },
         {
             name: "wooden axe",
@@ -829,6 +830,7 @@ addArea("Overworld",                                            // Function for 
             cost: [["sticks", 2], ["diamond", 3]],
             amount: 1,
             unlockGrinds: ["strip mines"],
+            message: ["Strip Mines Unlocked!"]
         },
         {
             name: "diamond axe",
@@ -1007,6 +1009,7 @@ addArea("Nether",                                            // Function for add
             amount: 1,
             autoCraft: [["netherite pickaxe", 1000], ["netherite axe", 1000], ["netherite shovel", 1000]],
             unlockGrinds: ["soul sand valley"],
+            message: ["Soul Sand Valley Unlocked!"]
         },
         {
             name: "sticks",
