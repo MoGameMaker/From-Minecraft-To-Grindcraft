@@ -3,7 +3,7 @@ setGameInfo({
     name: "From Minecraft To Grindcraft",                         // The name of your game!
     version: "0.1",                                     // The current version of your game!
     icon: "images/system/air.png",                    // Link or path to an icon image for your game!
-    ID: "fromMinecraftToGrindcraft",                             // Your game's ID! Should be unique for every game!
+    ID: "From Minecraft To Grindcraft",                             // Your game's ID! Should be unique for every game!
 });
 
 // Resources
