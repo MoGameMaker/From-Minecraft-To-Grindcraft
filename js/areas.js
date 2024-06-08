@@ -577,6 +577,13 @@ addArea("Overworld",                                            // Function for 
             amount: 0,
         },
         {
+            name: "cobbled deepslate",
+            desc: "Required to make more durable villager house walls",
+            type: "display",
+            cost: [["cobbled deepslate", 0]],
+            amount: 0,
+        },
+        {
             name: "gravel",
             desc: "Required to make concrete powder",
             type: "display",
