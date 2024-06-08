@@ -881,7 +881,7 @@ addArea("Nether",                                            // Function for add
     {
         name: "nether wastes",
         unlocked: true,
-        auto: ["netherite axe"],                         // List of items that will auto-grind this grind
+        auto: ["netherite pickaxe"],                         // List of items that will auto-grind this grind
         background: "images/grinds/overworld.png",
         resources: [
             {
@@ -943,7 +943,7 @@ addArea("Nether",                                            // Function for add
     {
         name: "soul sand valley",
         unlocked: false,
-        auto: ["netherite axe"],                         // List of items that will auto-grind this grind
+        auto: [["netherite shovel"], ["netherite pickaxe"]],                         // List of items that will auto-grind this grind
         background: "images/grinds/overworld.png",
         resources: [
             {
@@ -1005,7 +1005,8 @@ addArea("Nether",                                            // Function for add
             type: "craft",
             cost: [["oak planks", 4], ["iron ingot", 2]],
             amount: 1,
-            autoCraft: [["netherite pickaxe", 1000], ["netherite axe", 1000], ["netherite shovel", 1000]]
+            autoCraft: [["netherite pickaxe", 1000], ["netherite axe", 1000], ["netherite shovel", 1000]],
+            unlockGrinds: ["soul sand valley"],
         },
         {
             name: "sticks",
@@ -1042,6 +1043,20 @@ addArea("Nether",                                            // Function for add
             desc: "Required to make a bridge to a nether fortress",
             type: "display",
             cost: [["netherrack", 0]],
+            amount: 0,
+        },
+        {
+            name: "soul sand",
+            desc: "Required to summon the wither",
+            type: "display",
+            cost: [["soul sand", 0]],
+            amount: 0,
+        },
+        {
+            name: "soul soil",
+            desc: "Work In Progress",
+            type: "display",
+            cost: [["soul soil", 0]],
             amount: 0,
         },
         {
@@ -1217,7 +1232,6 @@ addArea("Nether",                                            // Function for add
             type: "craft",
             cost: [["sticks", 2], ["diamond", 3]],
             amount: 1,
-            unlockGrinds: ["strip mines"],
         },
         {
             name: "diamond axe",
