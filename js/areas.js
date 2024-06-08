@@ -394,7 +394,7 @@ addArea("Overworld",                                            // Function for 
                 {
                     id: "diamond ore",
                     time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
-                    probability: 5,
+                    probability: 10,
                     customResources: {
                         guaranteed: [
                             {
