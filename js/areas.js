@@ -963,7 +963,7 @@ addArea("Nether",                                            // Function for add
             {
                 id: "ancient debris",
                 time: [["netherite pickaxe", 3.4], ["diamond pickaxe", 5.65]],
-                probability: 10,
+                probability: 1,
                 mults: ["netherite pickaxe", 1, 3],
             },
         ]
