@@ -116,7 +116,33 @@ addResources({                                          // Function for adding a
     gravel: {
         image: "images/ores_and_ingots/gravel.png",
     },
-
+    "deepslate coal ore": {
+        image: "images/ores_and_ingots/deepslate_coal_ore.png",
+    },
+    "deepslate iron ore": {
+        image: "images/ores_and_ingots/deepslate_iron_ore.png",
+    },
+    "deepslate copper ore": {
+        image: "images/ores_and_ingots/deepslate_copper_ore.png",
+    },
+    "deepslate lapis lazuli ore": {
+        image: "images/ores_and_ingots/deepslate_lapis_lazuli_ore.png",
+    },
+    "deepslate gold ore": {
+        image: "images/ores_and_ingots/deepslate_gold_ore.png",
+    },
+    "deepslate redstone ore": {
+        image: "images/ores_and_ingots/deepslate_redstone_ore.png",
+    },
+    "deepslate diamond ore": {
+        image: "images/ores_and_ingots/deepslate_diamond_ore.png",
+    },
+    "deepslate": {
+        image: "images/ores_and_ingots/deepslate.png",
+    },
+    "cobbled deepslate": {
+        image: "images/ores_and_ingots/cobbled_deepslate.png",
+    },
     //Ores And Ingots
 
     //Axes
@@ -229,12 +255,12 @@ addArea("Overworld",                                            // Function for 
                 {
                     id: "stone",
                     time: [["diamond pickaxe", 0.3], ["gold pickaxe", 0.35], ["iron pickaxe", 0.4], ["stone pickaxe", 0.6], ["wooden pickaxe", 1.15]],
-                    probability: 70,
+                    probability: 140,
                     customResources: {
                         guaranteed: [
                             {
                                 name: "cobblestone",
-                                amount: [1, 1],
+                                amount: [1, 5],
                             }
                         ]
                     }
@@ -247,7 +273,7 @@ addArea("Overworld",                                            // Function for 
                         guaranteed: [
                             {
                                 name: "coal",
-                                amount: [7, 17],
+                                amount: [1, 10],
                             }
                         ]
                     }
@@ -373,9 +399,107 @@ addArea("Overworld",                                            // Function for 
             background: "images/grinds/strip_mine.png",
             resources: [
                 {
+                    id: "deepslate",
+                    time: [["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
+                    probability: 90,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "cobbled deepslate",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate coal ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7], ["wooden pickaxe", 3.4]],
+                    probability: 0.25,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "coal",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate iron ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
+                    probability: 40,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "raw iron",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate copper ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
+                    probability: 25,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "raw copper",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate gold ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    probability: 15,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "raw gold",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate redstone ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    probability: 15,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "redstone dust",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
+                    id: "deepslate lapis lazuli ore",
+                    time: [["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
+                    probability: 15,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "raw gold",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    }
+                },
+                {
                     id: "obsidian",
                     time: [["diamond pickaxe", 9.4]],
-                    probability: 45,
+                    probability: 10,
                 },
             ]
         },
