@@ -270,27 +270,25 @@ addArea("Overworld",                                            // Function for 
         {
             name: "surface",
             unlocked: true,
-            auto: [["netherite shovel"], ["netherite axe"]],                         // List of items that will auto-grind this grind
+            auto: [],                         // List of items that will auto-grind this grind
             background: "images/grinds/overworld.png",
             resources: [
                 {
                     id: "oak logs",
-                    time: [["netherite axe", 0.1], ["diamond axe", 0.4], ["gold axe", 0.45], ["iron axe", 0.5], ["stone axe", 0.75], ["wooden axe", 1.5], ["", 3]],
+                    time: [["netherite axe", 0.35], ["diamond axe", 0.4], ["gold axe", 0.45], ["iron axe", 0.5], ["stone axe", 0.75], ["wooden axe", 1.5], ["", 3]],
                     probability: 45,
-                    mults: [["netherite axe", 1, 3]],
                 },
                 {
                     id: "dirt",
                     time: [["netherite shovel", 0.1], ["diamond shovel", 0.1], ["gold shovel", 0.125], ["iron shovel", 0.15], ["stone shovel", 0.2], ["wooden shovel", 0.4], ["", 0.75]],
                     probability: 55,
-                    mults: [["netherite shovel", 1, 3]],
                 },
             ]
         },
         {
             name: "caves",
             unlocked: false,
-            auto: [["netherite pickaxe"], ["netherite shovel"]],                         // List of items that will auto-grind this grind
+            auto: [],                         // List of items that will auto-grind this grind
             background: "images/grinds/caves.png",
             resources: [
                 {
@@ -305,11 +303,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "coal ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.7], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 3.4]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.7], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 3.4]],
                     probability: 90,
                     customResources: {
                         guaranteed: [
@@ -319,11 +317,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "copper ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.7], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.7], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
                     probability: 60,
                     customResources: {
                         guaranteed: [
@@ -333,11 +331,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "iron ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
                     probability: 40,
                     customResources: {
                         guaranteed: [
@@ -347,11 +345,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "lapis lazuli ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15]],
                     probability: 15,
                     customResources: {
                         guaranteed: [
@@ -361,11 +359,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "gold ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
                     probability: 20,
                     customResources: {
                         guaranteed: [
@@ -375,11 +373,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     }
-                    ,mults: [["netherite pickaxe", 1, 3]],
+                    ,
                 },
                 {
                     id: "redstone ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
                     probability: 40,
                     customResources: {
                         guaranteed: [
@@ -389,11 +387,11 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "diamond ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["iron pickaxe", 0.75]],
                     probability: 10,
                     customResources: {
                         guaranteed: [
@@ -403,7 +401,7 @@ addArea("Overworld",                                            // Function for 
                             }
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "dirt",
@@ -418,7 +416,7 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite shovel", 1, 3]],
+                    
                 },
                 {
                     id: "gravel",
@@ -439,19 +437,19 @@ addArea("Overworld",                                            // Function for 
                         ],
                         randomRolls: 1,
                     },
-                    mults: [["netherite shovel", 1, 3]],
+                    
                 },
             ]
         },
         {
             name: "strip mines",
             unlocked: false,
-            auto: ["netherite pickaxe"],                         // List of items that will auto-grind this grind
+            auto: [],                         // List of items that will auto-grind this grind
             background: "images/grinds/strip_mine.png",
             resources: [
                 {
                     id: "deepslate",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
+                    time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
                     probability: 90,
                     customResources: {
                         guaranteed: [
@@ -462,11 +460,11 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "deepslate coal ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7], ["wooden pickaxe", 3.4]],
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7], ["wooden pickaxe", 3.4]],
                     probability: 0.25,
                     customResources: {
                         guaranteed: [
@@ -477,11 +475,11 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "deepslate iron ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
                     probability: 40,
                     customResources: {
                         guaranteed: [
@@ -492,11 +490,11 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "deepslate copper ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
                     probability: 25,
                     customResources: {
                         guaranteed: [
@@ -507,11 +505,11 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
-                    id: "deepslate gold ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    id: "deepslate lapis lazuli ore",
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
                     probability: 15,
                     customResources: {
                         guaranteed: [
@@ -522,11 +520,26 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
+                },
+                {
+                    id: "deepslate gold ore",
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    probability: 15,
+                    customResources: {
+                        guaranteed: [
+                            {
+                                name: "raw gold",
+                                amount: [1, 1],
+                            }
+                            
+                        ]
+                    },
+                    
                 },
                 {
                     id: "deepslate redstone ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
                     probability: 15,
                     customResources: {
                         guaranteed: [
@@ -537,28 +550,27 @@ addArea("Overworld",                                            // Function for 
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
-                    id: "deepslate lapis lazuli ore",
-                    time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15], ["stone pickaxe", 1.7]],
-                    probability: 15,
+                    id: "deepslate diamond ore",
+                    time: [["netherite pickaxe", 0.75], ["diamond pickaxe", 0.85], ["iron pickaxe", 1.15]],
+                    probability: 10,
                     customResources: {
                         guaranteed: [
                             {
-                                name: "raw gold",
+                                name: "diamond",
                                 amount: [1, 1],
                             }
                             
                         ]
                     },
-                    mults: [["netherite pickaxe", 1, 3]],
+                    
                 },
                 {
                     id: "obsidian",
                     time: [["netherite pickaxe", 3.6], ["diamond pickaxe", 9.4]],
                     probability: 10,
-                    mults: [["netherite pickaxe", 2, 3]],
                 },
             ]
         },
@@ -883,24 +895,22 @@ addArea("Nether",                                            // Function for add
     {
         name: "nether wastes",
         unlocked: true,
-        auto: ["netherite pickaxe"],                         // List of items that will auto-grind this grind
+        auto: [],                         // List of items that will auto-grind this grind
         background: "images/grinds/overworld.png",
         resources: [
             {
                 id: "netherrack",
                 time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.1], ["gold pickaxe", 0.1], ["iron pickaxe", 0.1], ["stone pickaxe", 0.15], ["wooden pickaxe", 0.3]],
                 probability: 70,
-                mults: ["netherite pickaxe", 1, 3],
             },
             {
                 id: "basalt",
-                time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.25], ["gold pickaxe", 0.255], ["iron pickaxe", 0.35], ["stone pickaxe", 0.5], ["wooden pickaxe", 0.95]],
+                time: [["netherite pickaxe", 0.25], ["diamond pickaxe", 0.25], ["gold pickaxe", 0.255], ["iron pickaxe", 0.35], ["stone pickaxe", 0.5], ["wooden pickaxe", 0.95]],
                 probability: 30,
-                mults: ["netherite pickaxe", 1, 3],
             },
             {
                 id: "blackstone",
-                time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.3], ["gold pickaxe", 0.35], ["iron pickaxe", 0.4], ["stone pickaxe", 0.6], ["wooden pickaxe", 1.15]],
+                time: [["netherite pickaxe", 0.25], ["diamond pickaxe", 0.3], ["gold pickaxe", 0.35], ["iron pickaxe", 0.4], ["stone pickaxe", 0.6], ["wooden pickaxe", 1.15]],
                 probability: 80,
                 customResources: {
                     guaranteed: [
@@ -910,11 +920,10 @@ addArea("Nether",                                            // Function for add
                         }
                     ]
                 },
-                mults: ["netherite pickaxe", 1, 3],
             },
             {
                 id: "nether quartz ore",
-                time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
+                time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
                 probability: 50,
                 customResources: {
                     guaranteed: [
@@ -924,11 +933,10 @@ addArea("Nether",                                            // Function for add
                         }
                     ]
                 },
-                mults: ["netherite pickaxe", 1, 3],
             },
             {
                 id: "nether gold ore",
-                time: [["netherite pickaxe", 0.1], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
+                time: [["netherite pickaxe", 0.5], ["diamond pickaxe", 0.6], ["gold pickaxe", 0.635], ["iron pickaxe", 0.75], ["stone pickaxe", 1.15], ["wooden pickaxe", 2.25]],
                 probability: 20,
                 customResources: {
                     guaranteed: [
@@ -938,33 +946,73 @@ addArea("Nether",                                            // Function for add
                         }
                     ]
                 },
-                mults: ["netherite pickaxe", 1, 3],
+            },
+        ]
+    },
+    {
+        name: "bastion",
+        unlocked: false,
+        auto: [],                         // List of items that will auto-grind this grind
+        background: "images/grinds/overworld.png",
+        resources: [
+            {
+                id: "netherite upgrade template",
+                time: [["netherite pickaxe", 5], ["diamond pickaxe", 10]],
+                probability: 5,
+            },
+            {
+                id: "netherite scrap",
+                time: [["netherite pickaxe", 5], ["diamond pickaxe", 10]],
+                probability: 20,
+                customResources: {
+                    guaranteed: [
+                        {
+                            name: "netherite scrap",
+                            amount: [3, 5],
+                        },
+                    ],
+                },
+            },
+            {
+                id: "diamond",
+                time: [["netherite pickaxe", 2.5], ["diamond pickaxe", 5]],
+                probability: 30,
+            },
+            {
+                id: "gold ingot",
+                time: [["netherite pickaxe", 2.5], ["diamond pickaxe", 5]],
+                probability: 95,
+                customResources: {
+                    guaranteed: [
+                        {
+                            name: "gold ingot",
+                            amount: [1, 3],
+                        },
+                    ],
+                },
             },
         ]
     },
     {
         name: "soul sand valley",
         unlocked: false,
-        auto: [["netherite shovel"], ["netherite pickaxe"]],                         // List of items that will auto-grind this grind
+        auto: [],                         // List of items that will auto-grind this grind
         background: "images/grinds/overworld.png",
         resources: [
             {
                 id: "soul sand",
                 time: [["netherite shovel", 0.1], ["diamond shovel", 0.1], ["gold shovel", 0.1], ["iron shovel", 0.15], ["stone shovel", 0.2], ["wooden shovel", 0.4], ["", 0.75]],
                 probability: 80,
-                mults: ["netherite shovel", 1, 3],
             },
             {
                 id: "soul soil",
                 time: [["netherite shovel", 0.1], ["diamond shovel", 0.1], ["gold shovel", 0.1], ["iron shovel", 0.15], ["stone shovel", 0.2], ["wooden shovel", 0.4], ["", 0.75]],
                 probability: 80,
-                mults: ["netherite shovel", 1, 3],
             },
             {
                 id: "ancient debris",
                 time: [["netherite pickaxe", 3.4], ["diamond pickaxe", 5.65]],
                 probability: 1,
-                mults: ["netherite pickaxe", 1, 3],
             },
         ]
     },
@@ -1103,7 +1151,8 @@ addArea("Nether",                                            // Function for add
             type: "craft",
             cost: [["cobblestone", 50], ["blackstone", 120]],
             amount: 1,
-            autoCraft: [["netherite upgrade template", 12000]],
+            message: ["Bastion Remnant Unlocked"],
+            unlockGrinds: ["bastion"],
         },
         {
             name: "nether fortress",
@@ -1111,7 +1160,7 @@ addArea("Nether",                                            // Function for add
             type: "craft",
             cost: [["netherrack", 200], ["blackstone", 100]],
             amount: 1,
-            autoCraft: [["netherite upgrade template", 12000]],
+            unlockGrinds: ["fortress"],
         },
         {
             name: "diamond",
@@ -1136,7 +1185,7 @@ addArea("Nether",                                            // Function for add
         },
         {
             name: "netherite ingot",
-            desc: "Used to make netherite netherite tools. The best tools in the game alowing grind automation",
+            desc: "Used to make netherite netherite tools, The best tools in the game",
             type: "craft",
             cost: [["netherite scrap", 4], ["gold ingot", 4]],
             amount: 1,
@@ -1151,7 +1200,7 @@ addArea("Nether",                                            // Function for add
         {
             name: "iron nuggets",
             desc: "Used to make iron ingots in the nether",
-            type: "craft",
+            type: "display",
             cost: [["iron nuggets", 0]],
             amount: 0,
         },
@@ -1253,21 +1302,21 @@ addArea("Nether",                                            // Function for add
         {
             name: "netherite pickaxe",
             desc: "Unlocks grind automation",
-            type: "craft",
+            type: "display",
             cost: [["diamond pickaxe", 1], ["netherite ingot", 1], ["netherite upgrade template", 1]],
             amount: 1,
         },
         {
             name: "netherite axe",
             desc: "Unlocks grind automation",
-            type: "craft",
+            type: "display",
             cost: [["diamond axe", 1], ["netherite ingot", 1], ["netherite upgrade template", 1]], 
             amount: 1,
         },
         {
             name: "netherite shovel",
             desc: "Unlocks grind automation",
-            type: "craft",
+            type: "display",
             cost: [["diamond shovel", 1], ["netherite ingot", 1], ["netherite upgrade template", 1]],
             amount: 1,
         },
